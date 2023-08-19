@@ -22,7 +22,7 @@ export const AutocompleteDropdownContext = React.createContext<IAutocompleteDrop
 
 export const AutocompleteDropdownContextProvider: FC<any> = ({ children }) => {
   const [content, setContent] = useState<IAutocompleteDropdownContext['content']>()
-  const [direction, setDirection] = useState<IAutocompleteDropdownContext['direction']>(undefined)
+  const [direction, setDirection] = useState<IAutocompleteDropdownContext['direction']>('down')
   const [show, setShow] = useState(false)
   const [dropdownHeight, setDropdownHeight] = useState(0)
   const [inputMeasurements, setInputMeasurements] = useState<
